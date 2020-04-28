@@ -1,0 +1,5 @@
+Custom template tags
+
+- simple_tag -> Processes the data and returns String.
+- inclusion_tag -> Processes the data and returns the rendered template
+- assignment_tag -> Processes the data and sets the variable in context.

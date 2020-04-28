@@ -1,0 +1,11 @@
+<h1>{{object.title}}</h1> <br>
+{{object.price}}<br>
+{{object.featured}}<br>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <h2> Do you want to delete "{{obj.title}}"</h2>
+    <input type='submit' value="yes"> {{delete}}
+    <input type='submit' value="cancel">
+</form>
+

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load products_tags %}
+{% block content %}
+<br>
+<form method="POST">{% csrf_token %}
+    <h3> Total Products Avaialble till yet <b>((Template Tag Working))</b> {% Posts_features %}</h3><br>
+    TOP 3 Products:
+    {% latest_products 3 %} <br>
+    {% questions_list %}
+    {{form.as_p}}
+    <input type="submit" value="save">
+</form>
+{% endblock %}

@@ -1,0 +1,4 @@
+<h1> Article Model Lists </h1>
+{% for x in object_list %}
+    <p> {{x.id}} <a href='{{ x.get_absolute_url }}' >{{x.title}}</a></p>
+{% endfor %}

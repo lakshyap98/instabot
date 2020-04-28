@@ -1,0 +1,3 @@
+{% for x in obj %}
+    <p> {{x.id}} <a href='{{ x.get_absolute_url }}' >{{x.title}}</a></p>
+{% endfor %}
